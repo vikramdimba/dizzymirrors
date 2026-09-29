@@ -2,7 +2,7 @@ import { cp, mkdir, rm } from "node:fs/promises";
 
 const output = new URL("../dist/", import.meta.url);
 const root = new URL("../", import.meta.url);
-const files = ["index.html", "styles.css", "script.js", "favicon.svg", "CNAME"];
+const files = ["index.html", "styles.css", "script.js", "favicon.svg"];
 
 await rm(output, { force: true, recursive: true });
 await mkdir(output, { recursive: true });
