@@ -3,93 +3,241 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#07111e" />
+    <meta name="theme-color" content="#f4f3ef" />
     <meta
       name="description"
-      content="Dizzy Mirrors is launching soon. Join the list or get in touch."
+      content="Dizzy Mirrors: handmade bags from a New York bag lady, plus Dizzy's newsletter on vintage finds, resale and why even our shopping carts are political."
     />
-    <title>Dizzy Mirrors — Launching Soon</title>
+    <meta property="og:title" content="Dizzy Mirrors · Handmade bags from a New York bag lady" />
+    <meta property="og:description" content="The first Dizzy Mirrors bags are here, made by hand in New York. Join the list for the first drop." />
+    <meta property="og:image" content="./assets/bags/knot-street.webp" />
+    <title>Dizzy Mirrors · Handmade bags from a New York bag lady</title>
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
-    <link rel="preload" href="./assets/hero.webp" as="image" type="image/webp" />
+    <link rel="preload" href="./assets/bags/knot-subway.webp" as="image" type="image/webp" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;0,6..96,700;1,6..96,500;1,6..96,700&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700&family=Mrs+Saint+Delafield&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <a class="skip-link" href="#contact">Skip to contact</a>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="site-header" aria-label="Site header">
-      <a class="brand" href="#top" aria-label="Dizzy Mirrors home">
-        <span class="brand-mark" aria-hidden="true"></span>
-        <span>Dizzy Mirrors</span>
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Dizzy Mirrors home">
+        <span class="wordmark-dizzy">dizzy</span>
+        <span class="wordmark-mirrors">mirrors</span>
       </a>
-      <a class="header-link" href="#contact">Contact</a>
+      <nav aria-label="Main">
+        <a href="#bags">The bags</a>
+        <a href="#about">About</a>
+        <a href="#newsletter">Newsletter</a>
+        <a class="nav-cta" href="#list">Join the list</a>
+      </nav>
     </header>
 
-    <main>
+    <main id="main">
       <section class="hero" id="top" aria-labelledby="hero-title">
-        <div class="hero-image" aria-hidden="true"></div>
-        <div class="hero-glow" aria-hidden="true"></div>
-        <div class="hero-content">
-          <p class="eyebrow">A new reflection is taking shape</p>
-          <h1 id="hero-title">Launching<br /><em>soon.</em></h1>
-          <p class="hero-copy">
-            Dizzy Mirrors is almost ready. Leave us a note and be first to know when the doors open.
+        <div class="hero-copy">
+          <p class="eyebrow">Handmade in New York</p>
+          <h1 id="hero-title">The bag lady is <em>making bags.</em></h1>
+          <p class="lede">
+            After years of hunting vintage designer bags, Dizzy started making her own, one at a time,
+            for friends first. Now they're almost ready for you.
           </p>
-          <a class="hero-cta" href="#contact">Stay in the loop</a>
+          <div class="hero-actions">
+            <a class="button" href="#list">Get first dibs</a>
+            <a class="text-link" href="#bags">See the first bags</a>
+          </div>
         </div>
-        <div class="scroll-cue" aria-hidden="true">
-          <span></span>
-          <small>Scroll</small>
+        <figure class="hero-photo">
+          <img
+            src="./assets/bags/knot-subway.webp"
+            width="830"
+            height="1152"
+            alt="Dizzy holding her handmade leopard-print knot bag with long rust fringe on a white-tiled subway platform."
+          />
+          <figcaption class="station-sign" aria-hidden="true"><span>Dizzy Mirrors</span></figcaption>
+        </figure>
+      </section>
+
+      <div class="fringe" aria-hidden="true"></div>
+
+      <section class="bags" id="bags" aria-labelledby="bags-title">
+        <div class="section-head">
+          <p class="eyebrow">The first bags</p>
+          <h2 id="bags-title">The leopard knot</h2>
+          <p>
+            A soft knot bag in leopard print, finished with a long rust fringe that swings when you walk.
+            Slip the handle over your wrist and go. The first few were made for friends. The next ones
+            will be made for the list.
+          </p>
+        </div>
+        <div class="gallery">
+          <figure class="g-tall">
+            <img
+              src="./assets/bags/knot-street.webp"
+              width="814"
+              height="1128"
+              loading="lazy"
+              alt="The leopard knot bag held up against a sunny New York street corner."
+            />
+          </figure>
+          <figure class="g-wide">
+            <img
+              src="./assets/bags/knot-wrist.webp"
+              width="818"
+              height="784"
+              loading="lazy"
+              alt="The knot bag worn on the wrist with a striped shirt, stacked bracelets and leopard-print nails."
+            />
+          </figure>
+          <ul class="bag-notes">
+            <li><span>Made</span> by hand, one at a time</li>
+            <li><span>Carry</span> on the wrist or looped in hand</li>
+            <li><span>Tested</span> on the G train</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="about" id="about" aria-labelledby="about-title">
+        <div class="about-inner">
+          <p class="eyebrow">Who's Dizzy</p>
+          <h2 id="about-title">Finance by day. Bag lady always.</h2>
+          <div class="about-grid">
+            <div class="about-text">
+              <p>
+                Dizzy works in finance in New York and has spent years hunting vintage designer bags on
+                Goodwill auctions, eBay and in small consignment shops. She keeps a strict
+                “materiality threshold” and usually breaks it for a Fendi Baguette.
+              </p>
+              <p>
+                Her newsletter covers the finds, and also tariffs, fast fashion, Y2K nostalgia and the
+                women in her family who taught her that a good bag gets handed down. Her own bags come
+                from the same place.
+              </p>
+              <p class="signature" aria-label="Signed, xx, dizzy">xx, dizzy</p>
+            </div>
+            <ul class="values">
+              <li>
+                <h3>Made by a person</h3>
+                <p>Not in a factory. By hand, by Dizzy.</p>
+              </li>
+              <li>
+                <h3>Built to last</h3>
+                <p>Buy less, buy better. That goes for her bags too.</p>
+              </li>
+              <li>
+                <h3>Meant to be handed down</h3>
+                <p>Like her mom's vintage Gucci. Like her grandma's Mulberry.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter" id="newsletter" aria-labelledby="newsletter-title">
+        <div class="section-head">
+          <p class="eyebrow">From the newsletter</p>
+          <h2 id="newsletter-title">Dizzy's Designer Dreams</h2>
+          <p>Vintage finds, resale deals and unsolicited opinions. Even our shopping carts are political.</p>
+        </div>
+        <div class="posts">
+          <!-- posts:start -->
+          <a class="post" href="https://dizzymirrors.substack.com/p/is-the-handbag-over">
+            <img src="https://substackcdn.com/image/fetch/w_640,h_420,c_fill,f_auto,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F81748503-bdbd-4464-b73a-855e58cd50fb.tif" width="640" height="420" loading="lazy" alt="" />
+            <time datetime="2026-06-20">June 20, 2026</time>
+            <h3>Is the Handbag Over?</h3>
+            <p>WRONG QUESTION!</p>
+          </a>
+          <a class="post" href="https://dizzymirrors.substack.com/p/shein-everlane-and-the-death-of-the">
+            <img src="https://substackcdn.com/image/fetch/w_640,h_420,c_fill,f_auto,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6c42731e-7e89-4c4c-ae5e-c980fd92d1dd_1036x706.png" width="640" height="420" loading="lazy" alt="" />
+            <time datetime="2026-05-19">May 19, 2026</time>
+            <h3>Shein, Everlane, and the Death of the Quince Era</h3>
+            <p>How fast fashion learned to speak the language of responsible consumption and why the middle is collapsing.</p>
+          </a>
+          <a class="post" href="https://dizzymirrors.substack.com/p/spring-always-wins">
+            <img src="https://substackcdn.com/image/fetch/w_640,h_420,c_fill,f_auto,q_auto:good/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F594d39b7-3932-4312-b547-2499287dc4fa_1320x1264.png" width="640" height="420" loading="lazy" alt="" />
+            <time datetime="2026-04-19">April 19, 2026</time>
+            <h3>Spring Always Wins</h3>
+            <p>On freezing Januaries, forced resets, and the version of life that actually feels aligned</p>
+          </a>
+          <!-- posts:end -->
+        </div>
+        <a class="text-link" href="https://dizzymirrors.substack.com/archive">Read every issue</a>
+      </section>
+
+      <section class="list" id="list" aria-labelledby="list-title">
+        <div class="list-inner">
+          <div>
+            <p class="eyebrow">First dibs</p>
+            <h2 id="list-title">Get on the list.</h2>
+            <p>
+              Subscribe to the newsletter and you'll hear about each new bag before anyone else,
+              along with Dizzy's weekly designer dreams.
+            </p>
+          </div>
+          <div class="subscribe">
+            <iframe
+              src="https://dizzymirrors.substack.com/embed"
+              title="Subscribe to Dizzy Mirrors on Substack"
+              width="480"
+              height="150"
+              frameborder="0"
+              scrolling="no"
+              loading="lazy"
+            ></iframe>
+            <p class="small">
+              Trouble with the form? <a href="https://dizzymirrors.substack.com/subscribe">Subscribe on Substack</a>.
+            </p>
+          </div>
         </div>
       </section>
 
       <section class="contact" id="contact" aria-labelledby="contact-title">
-        <div class="contact-intro">
-          <p class="eyebrow">Contact</p>
-          <h2 id="contact-title">Drop us<br />a line.</h2>
+        <div class="section-head">
+          <p class="eyebrow">Say hi</p>
+          <h2 id="contact-title">Custom orders, questions, bag gossip.</h2>
           <p>
-            Questions, collaborations, or just curious? Send a note and we’ll get back to you.
+            Write to <span class="email" id="contact-email">dizzymirrors@outlook.com</span>. Traditional
+            snail mail works too.
           </p>
         </div>
-
         <form class="contact-form" id="contact-form">
           <div class="field-row">
-            <label>
+            <label for="name">
               <span>Name</span>
-              <input name="name" type="text" autocomplete="name" required />
+              <input id="name" name="name" type="text" autocomplete="name" required />
             </label>
-            <label>
+            <label for="email">
               <span>Email</span>
-              <input name="email" type="email" autocomplete="email" required />
+              <input id="email" name="email" type="email" autocomplete="email" required />
             </label>
           </div>
-          <label>
+          <label for="message">
             <span>Message</span>
-            <textarea name="message" rows="6" required></textarea>
-          </label>
-          <label class="opt-in">
-            <input name="updates" type="checkbox" />
-            <span>Keep me posted on updates and the launch.</span>
+            <textarea id="message" name="message" rows="5" required></textarea>
           </label>
           <div class="form-actions">
-            <button type="submit">Send message</button>
+            <button type="submit">Write to Dizzy</button>
             <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
           </div>
         </form>
       </section>
     </main>
 
-    <footer>
-      <a class="brand footer-brand" href="#top" aria-label="Back to top">
-        <span class="brand-mark" aria-hidden="true"></span>
-        <span>Dizzy Mirrors</span>
+    <footer class="site-footer">
+      <a class="wordmark" href="#top" aria-label="Back to top">
+        <span class="wordmark-dizzy">dizzy</span>
+        <span class="wordmark-mirrors">mirrors</span>
       </a>
-      <p>© <span id="year"></span> Dizzy Mirrors. All rights reserved.</p>
+      <nav aria-label="Elsewhere">
+        <a href="https://www.instagram.com/dizzymirrors/">Instagram</a>
+        <a href="https://dizzymirrors.substack.com/">Substack</a>
+      </nav>
+      <p>© <span id="year"></span> Dizzy Mirrors. Made in New York.</p>
     </footer>
 
     <script src="./script.js"></script>

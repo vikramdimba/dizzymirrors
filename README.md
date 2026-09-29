@@ -1,6 +1,6 @@
 # Dizzy Mirrors
 
-Independent source for the dizzymirrors.com launch page. This replaces the GoDaddy Website Builder page without changing the domain registration.
+Source for dizzymirrors.com: Dizzy's handmade bags, her story, and the latest issues of her Substack newsletter.
 
 ## Preview locally
 
@@ -17,9 +17,20 @@ npm run check
 npm run build
 ```
 
-## Contact form
+## Newsletter posts
 
-The form currently opens the visitor's email app and addresses the message to `hello@dizzymirrors.com`. Confirm that mailbox before pointing the live domain at this site, or replace `contactEmail` in `script.js` with the correct inbox.
+`npm run build` pulls the three latest issues from the Substack archive
+(`dizzymirrors.substack.com`) and writes them between the `posts:start` and
+`posts:end` markers in `dist/index.html`. If Substack can't be reached, the build
+uses `data/posts.json`. Vercel only rebuilds on push, so new issues show up after
+the next deploy.
+
+## Contact and waitlist
+
+- The waitlist is the Substack subscribe embed in the "Get on the list" section.
+- The contact form opens the visitor's email app, addressed to
+  `dizzymirrors@outlook.com` (the address Dizzy uses on Substack). Change
+  `contactEmail` in `script.js` and the address in `index.html` if that moves.
 
 ## Production deployment
 
